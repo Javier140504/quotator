@@ -76,6 +76,7 @@ fetch (urlCompleta, {
                       headers:{
                         'Content-Type': 'application/json',
                         'Authorization': tokenAuthJwt
+                        'x-secure-origin':'MjAtaG8tYWNjZXNzLTIw'
                               }
                     }
       ).then(res => res.json())
