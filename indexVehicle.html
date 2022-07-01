@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardado de datos del vehículo</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+     <link rel="stylesheet" href="styles.css">
+</head>
+    
+<body>
+    <header id= cabecero> 
+        <div class="navbar navbar-dark bg-dark shadow-sm">
+        <div class="container">
+          <a href="#" class="navbar-brand d-flex align-items-center">
+            <strong>Guardado de datos adicionales del vehículo</strong>
+          </a>
+       </div>
+      </div>
+      <div class="navbar navbar-text">
+        <div class="container">
+          <a href="index.html" class="navbar-brand d-flex align-items-center">
+            <strong>Regresar</strong>
+          </a>
+       </div>
+      </div>
+    </header>
+       
+    <!-- esa clase card hace que centre un poquito-->
+    <form class="card p-4" action="javascript:void(0)" name="datosVehiculo" onsubmit="procesar()">
+        <!-- esa clase gace que se pongan en doble o triple columna-->
+        <div class="row gy-1">
+        
+        
+            <!-- Objeto vehicleType Id-->
+            <div class="col-sm-3">
+                <label for="vehicleTypeId">vehicleTypeId[0]</label>
+                <input type="text" id="vehicleTypeId" class="form-control"> <br>
+            </div>
+        
+            <!-- Objeto vehicleIdentificationNumber-->
+            <div class="col-sm-3">
+                <label for="vehicleIdNumber">vehicleIdentificationNumber(serie)[1]</label>
+                <input type="text" id="vehicleIdNumber" class="form-control"> <br>
+            </div>
+        
+            <!--Objeto Engine Number-->
+            <div class="col-sm-3">
+                <label for="engineNumber">engineNumber [2]</label>
+                <input type="text" id="engineNumber" class="form-control"> <br>
+            </div>
+        
+            <!-- Objeto placas-->
+            <div class="col-sm-3">
+                <label for="licensePlate">licensePlate[3]</label>
+                <input type="text" id="licensePlate" class="form-control"> <br>
+            </div>
+            <!-- Objeto color-->
+            <div class="col-sm-3">
+                <label for="color">color[4]</label>
+                <input type="text" id="color" class="form-control"> <br>
+            </div>
+            <!-- Objeto Public Registry-->
+            <div class="col-sm-3">
+                <label for="publicRegistryId">publicRegistryId[5]</label>
+                <input type="text" id="publicRegistryId" class="form-control"> <br>
+            </div>
+            <div class="col-sm-3">
+                <label for="publicRegistryValue">publicRegistryValue[6]</label>
+                <input type="text" id="publicRegistryId" class="form-control"> <br>
+            </div>
+            <div class="col-sm-3">
+                <!-- Objeto Crédito-->
+                <label for="vehiclePurchaseLoanNumber">vehiclePurchaseLoanNumber[7]</label>
+                <input type="text" id="vehiclePurchaseLoanNumber" class="form-control"> <br>
+            </div>
+            <div class="col-sm-3">
+                <label for="vehiclePurchaseLoanAmount">vehiclePurchaseLoanAmount[8]</label>
+                <input type="text" id="vehiclePurchaseLoanNumber" class="form-control"> <br>
+            </div>
+            <div class="col-sm-3">
+                <label for="vehiclePurchaseLoanCurrency">vehiclePurchaseLoanCurrency[9]</label>
+                <input type="text" id="vehiclePurchaseLoanCurrency" class="form-control"> <br>
+            </div>
+            <div class="col-sm-3">
+                <!-- Objeto Institución acreditadora-->
+                <label for="creditorID">creditorId[10]</label>
+                <input type="text" id="creditorId" class="form-control">
+            </div>
+        
+            <div class="col-sm-10">
+                <!-- Pedir el ID cifrado-->
+                <label for="IdCotCifra">Id de cotización Cifrado[11]</label>
+                <input type="text" id="IdCotCifra" class="form-control"> <br>
+            </div>
+        </div>
+        
+        <button type="submit" id="refresh" class="w-30 btn btn-primary btn-lg">Guardar...</button> <br>
+        
+        </form>
+        
+        </div>
+        </div>
+        
+        <div id="FormatoJSON">
+        
+            Formato cca: F
+        
+        </div>
+    
+        <footer class="my-5 pt-5 text-muted text-center text-small">
+            <p class="mb-1">&copy; 4Q22-3Q22 HyundaiNextGen</p>
+            <ul class="list-inline">
+              <li class="list-inline-item"><a href="https://www.google.com/url?sa=j&url=https%3A%2F%2Fdev.es.bbvaapimarket.com%2Fpreview%2Fbancomer%2Fvehicle-insurances&uct=1622003358&usg=v0WSosuuyCGC8zPiTVid4-v6yE4.&source=chat">Portal API Market Dev</a></li>
+              
+            </ul>
+          </footer>
+    
+    <script src= "script.js"> </script>
+</body>
+</html>
