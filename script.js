@@ -75,7 +75,7 @@ fetch (urlCompleta, {
                       body: JSON.stringify(registros), // data can be `string` or {object}!
                       headers:{
                         'Content-Type': 'application/json',
-                        'Authorization': tokenAuthJwt
+                        'Authorization': tokenAuthJwt,
                         'x-secure-origin':'MjAtaG8tYWNjZXNzLTIw'
                               }
                     }
