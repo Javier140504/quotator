@@ -68,7 +68,7 @@ console.log(urlCompleta);
 
 //Consumo el API con un Fetch 
 fetch (urlCompleta, {
-  method: 'POST',
+  method: 'PATCH',
   body: JSON.stringify(registros), // data can be `string` or {object}!
   headers:{
     'Content-Type': 'application/json',
